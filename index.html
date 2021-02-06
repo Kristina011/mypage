@@ -6,20 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/f449344cab.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="my-image">
         <!-- Top navigation -->
         <div class="topnav">
 
             <!-- Left-aligned links (default) -->
-            <a href="#logo">Logo</a>
+            <a href="#logo"><i class="fas fa-globe fa-3x"></i>
 
             <!-- Centered link -->
             <div class="topnav-centered">
                 <a href="#jobs" class="active">Jobs</a>
+<!--                <a href="#jobs" class="active"><span>Jobs</span></a>-->
                 <a href="#company" class="active">Company</a>
                 <a href="#resume" class="active">Resume</a>
                 <a href="#event" class="active">Event</a>
@@ -33,19 +34,62 @@
             </div>
         </div>
         <div class="container">
+
             <header>Your Future Starts Here Now</header>
+
             <p>Search millions of Jobs for free</p>
+
             <div>
-                <input class="input-style" type="text" placeholder="Keyword or Title">
-                <input class="input-style" type="text" placeholder="Location">
+                <input style="font-family: FontAwesome" class="input-style" type="text" placeholder="&#xf002 Keyword or Title">
+                <input style="font-family: FontAwesome" class="input-style" type="text" placeholder="&#xf041 Location">
                 <button class="search_button_style">SEARCH</button>
             </div>
+
         </div>
     </div>
 
-
     <div>
-        <h1>Test h1 element</h1>
+        <header class="header_flex">FIND JOBS BY CATEGORY</header>
+
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <i class="fas fa-laptop-code fa-4x"></i>
+                <p>COMPUTER & IT</p>
+            </div>
+
+            <div class="flex-item">
+                <i class="fas fa-keyboard fa-4x"></i>
+                <p>COMPUTER & IT</p>
+            </div>
+            <div class="flex-item">
+                <i class="fas fa-hands-helping fa-4x"></i>
+                <p>CUSTOMER SERVICE</p>
+            </div>
+            <div class="flex-item">
+                <i class="far fa-newspaper fa-4x"></i>
+                <p>MARKETING</p>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <i class="fas fa-pencil-ruler fa-4x"></i>
+                <p>OPERATIONS</p>
+            </div>
+            <div class="flex-item">
+                <i class="fas fa-file-invoice-dollar fa-4x"></i>
+                <p>INSURANCE</p>
+            </div>
+            <div class="flex-item">
+                <i class="fas fa-utensils fa-4x"></i>
+                <p>RESTAURANT</p>
+            </div>
+            <div class="flex-item">
+                <i class="fas fa-briefcase-medical fa-4x"></i>
+                <p>HEALTHCARE</p>
+            </div>
+        </div>
     </div>
 
 </body>

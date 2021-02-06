@@ -7,9 +7,9 @@ body {
 
 .my-image {
     /* The image used */
-    /* background-image: url('digital_transformation.jpg'); */
-    background: linear-gradient( rgba(74, 76, 147, 0.80), rgba(74, 76, 147, 0.80)), url('digital_transformation.jpg');
-    min-height: 550px;
+    /*background: linear-gradient( rgba(74, 76, 147, 0.80), rgba(74, 76, 147, 0.80)), url('digital_transformation.jpg');*/
+    background: linear-gradient( rgba(12, 2, 104, 0.70), rgba(12, 2, 104, 0.70)), url('digital_transformation.jpg');
+    min-height: 500px;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -27,15 +27,13 @@ body {
 
 .topnav a {
     float: left;
-    /* color: #f2f2f2; */
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
 }
 
 .topnav a.active {
-    /* color: black; */
     color: white;
 }
 
@@ -50,7 +48,11 @@ body {
 .topnav-centered a:hover {
     background-color: rgba(78, 107, 212, 0.83);
     color: white;
+    border-radius: 25px;
 }
+/*.topnav-centered span:hover {*/
+/*    color: rgba(78, 107, 212, 0.83);*/
+/*}*/
 
 .topnav-right {
     float: right;
@@ -58,6 +60,7 @@ body {
 
 .square_btn {
     margin-top: 5px;
+    margin-right: 15px;
     font: 10px sans-serif;
     display: inline-block;
     padding: 0px 15px;
@@ -95,6 +98,9 @@ header{
     margin-right: 15px;
     font: 10px sans-serif;
 }
+/*input::placeholder {*/
+/*    margin-left: 5px;*/
+/*}*/
 
 .search_button_style {
     margin-top: 30px;
@@ -106,19 +112,74 @@ header{
     /*background-color: rgba(78, 107, 212, 0.83);*/
     background-color: rgba(49, 82, 201, 1);
 }
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
 
+/*flexbox*/
 
-        /* Responsive navigation menu (for mobile devices) */
-        /* @media screen and (max-width: 600px) {
-    .topnav a,
-    .topnav-right {
-        float: none;
-        display: block;
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    padding-top: 10px;
+    margin: auto;
+    max-width: 1200px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    font-weight: normal;
+    font: 10px sans-serif;
+    color: rgb(12, 2, 104);
+
+    text-align: center;
+    margin: 1em;
+    flex-basis: 15%;
+    outline: 1px solid #d0cdcd;
+    padding: 20px 30px;
+}
+.flex-item:hover {
+    background-color: rgba(78, 107, 212, 0.83);
+    border-color: rgba(78, 107, 212, 0.83);
+}
+
+/*whatever the breakpoints are that scaffold has set.*/
+@media screen and (min-width: 320px) {
+    width: 100vw;
+}
+
+@media screen and (min-width: 640px) {
+    width: calc(50vw - 4em);
+}
+
+@media screen and (min-width: 960px) {
+    width: calc(25vw - 4em);
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+.header_flex {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    font: 25px sans-serif;
+    font-weight: bold;
+    color: rgb(12, 2, 104);
+}
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
     }
-    .topnav-centered a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
-} */
+}
