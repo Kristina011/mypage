@@ -129,6 +129,9 @@ button:focus {
     display: flex;
     justify-content: center;
 }
+.job_select {
+    color: rgb(12, 2, 104);
+}
 
 .flex-item {
     font-weight: normal;
