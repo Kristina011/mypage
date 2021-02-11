@@ -23,14 +23,14 @@ body {
 
 .topnav a {
     float: left;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 0 16px;
     text-decoration: none;
 }
 
 .topnav a.active {
-    color: white;
+    color: #FFFFFF;
 }
 
 .topnav-centered {
@@ -43,7 +43,7 @@ body {
 
 .topnav-centered a:hover {
     background-color: rgba(78, 107, 212, 0.83);
-    color: white;
+    color: #FFFFFF;
     border-radius: 25px;
 }
 /*.topnav-centered span:hover {*/
@@ -60,7 +60,7 @@ body {
     font: 12px sans-serif;
     display: inline-block;
     padding: 0px 15px;
-    border: 1px solid white;
+    border: 1px solid #FFFFFF;
     border-radius: 25px;
     text-decoration: none;
     background: transparent;
@@ -79,7 +79,7 @@ body {
     margin: auto;
     width: 40%;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
 }
 header{
     font: 40px sans-serif;
@@ -101,7 +101,7 @@ header{
     padding: 12px 20px;
     border-radius: 25px;
     font: 10px sans-serif;
-    color: white;
+    color: #FFFFFF;
     /*background-color: rgba(78, 107, 212, 0.83);*/
     background-color: rgba(49, 82, 201, 1);
 }
@@ -118,9 +118,10 @@ button:focus {
 }
 
 .flex-container {
+    flex-wrap: wrap;
     padding-top: 10px;
     margin: auto;
-    max-width: 1200px;
+    max-width: 600px;
 
     display: -webkit-box;
     display: -moz-box;
@@ -137,7 +138,6 @@ button:focus {
     font-weight: normal;
     font: 10px sans-serif;
     color: rgb(12, 2, 104);
-
     text-align: center;
     margin: 1em;
     flex-basis: 15%;
